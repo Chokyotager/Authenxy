@@ -1,0 +1,25 @@
+{
+  "name": "Authenxy",
+  "description": "Open-source library for AES-256-CBC directory encryption with Scrypt implementation.",
+  "update-name": "Vandaflower",
+  "version": "1.0",
+  "main": "authenxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chokyotager/Authenxy"
+  },
+  "keywords": [
+    "Security",
+    "Encryption"
+  ],
+  "author": "ChocoParrot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Chokyotager/Authenxy/issues"
+  },
+  "homepage": "https://github.com/Chokyotager/Authenxy",
+  "dependencies": {}
+}
