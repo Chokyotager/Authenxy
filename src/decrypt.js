@@ -3,9 +3,9 @@ var crypto = require("crypto");
 var fs = require("fs");
 var zlib = require("zlib");
 
-module.exports = function (file, password) {
+module.exports = function (buffer, password, expand_to) {
 
-  var data = fs.readFileSync(file);
+  var data = buffer;
 
   var initialisation_vector = data.slice(data.length - 16);
   var zipped_data = data.slice(0, data.length - 16);
@@ -25,7 +25,7 @@ module.exports = function (file, password) {
   // Expand
   var out = JSON.parse(zlib.inflateSync(decrypted));
 
-  var root_directory = file.substring(0, file.length - 5);
+  var root_directory = expand_to;
 
   var directories = Object.keys(out.files);
 
