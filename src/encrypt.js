@@ -12,7 +12,7 @@ module.exports = function (directory, password) {
 
   var key = crypto.scryptSync(password, password_salt, 32);
 
-  var cipher = crypto.createCipheriv("aes-256-cbc", key, initialisation_vector);
+  var cipher = crypto.createCipheriv("aes-256-gcm", key, initialisation_vector);
   var files = auxils.directoryTree(directory);
 
   var digestable = {files: new Object(), metadata: {

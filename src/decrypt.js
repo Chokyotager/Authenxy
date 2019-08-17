@@ -17,7 +17,7 @@ module.exports = function (buffer, password, expand_to) {
   // Decipher
   var key = crypto.scryptSync(password, password_salt, 32);
 
-  var decipher = crypto.createDecipheriv("aes-256-cbc", key, initialisation_vector);
+  var decipher = crypto.createDecipheriv("aes-256-gcm", key, initialisation_vector);
 
   var decrypted = decipher.update(inflated.slice(0, inflated.length - 32));
   decrypted = Buffer.concat([decrypted, decipher.final()]);
