@@ -5,6 +5,7 @@
   </p>
   <br />
   <p>
+    <a href="https://snyk.io/test/github/Chokyotager/Authenxy"><img src="https://snyk.io/test/github/Chokyotager/Authenxy/badge.svg?targetFile=package.json" alt="Vulnerabilities" /></a>
   </p>
 </div>
 
