@@ -1,8 +1,8 @@
 {
-  "name": "Authenxy",
+  "name": "authenxy",
   "description": "Open-source library for AES-256-CBC directory encryption with Scrypt implementation.",
   "update-name": "Vandaflower",
-  "version": "1.0",
+  "version": "1.0.0",
   "main": "authenxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
